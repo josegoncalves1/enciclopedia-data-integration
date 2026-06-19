@@ -1,124 +1,348 @@
-# 📊 ENCICLOPÉDIA DATA ENGINEERING & ANALYTICS
+# 📊 ENCICLOPÉDIA DATA ENGINEERING & ANALYTICS UNIVERSAL
 
-## ⚡ O Que Você Tem Aqui
-
-Uma **enciclopédia completa e prática** com **+150 exemplos funcionais** para:
-
-- 🔄 **Extração:** Web Scraping, APIs, Databases, Cloud Storage
-- 📦 **ETL/ELT:** Airflow, dbt, Python, Spark
-- 🗄️ **Data Warehousing:** Snowflake, BigQuery, Redshift, Databricks
-- 🌊 **Data Lakes:** S3, Azure Data Lake, GCP, Iceberg, Delta Lake
-- 📈 **BI:** Power BI, Looker, Tableau, Metabase
-- ⚡ **Real-time:** Kafka, Spark Streaming, Flink
-- 🐍 **Python & SQL:** Pandas, PySpark, Advanced queries
-- ☁️ **Cloud:** AWS, Azure, GCP
-- ✅ **Data Quality:** Great Expectations, dbt tests
-- 🤖 **ML & Analytics:** Feature engineering, Models, XGBoost
+**Versão:** 1.0 | **Data:** 2026 | **Público:** Data Engineers, Data Scientists, Analytics Engineers
 
 ---
 
-## 📚 DOCUMENTOS CRIADOS
+## 🎯 OBJETIVO
 
-### 1. **DATA_ANALYTICS_INDICE.md**
-- Visão geral de todas as 10 categorias
-- Casos de uso reais
-- Stack recomendado
-- Checklist de cobertura
+Referência prática e completa de **Extração, Transformação, Integração, Armazenamento e Análise de Dados** com exemplos funcionais para:
 
-### 2. **DATA_01_EXTRACAO_DADOS.md**
-- 13 exemplos de web scraping
-- APIs (REST, GraphQL)
-- Databases (SQL, NoSQL)
-- Cloud storage (S3, GCS, Azure)
-- Distributed crawling
-- Data validation
+- 🔄 **Extração:** Web Scraping (BeautifulSoup, Selenium, Scrapy), APIs, Databases
+- 📦 **ETL/ELT:** Airflow, dbt, Talend, Fivetran, Luigi
+- 🗄️ **Data Warehousing:** Snowflake, BigQuery, Redshift, Databricks
+- 🌊 **Data Lakes:** AWS S3 + Glue, Azure Data Lake, GCP Cloud Storage + BigLake
+- 📈 **BI & Visualização:** Power BI, Looker, Tableau, Metabase
+- ⚡ **Real-time:** Kafka, Apache Flink, Spark Streaming
+- 🐍 **Languages:** Python, SQL, Scala, PySpark
+- ☁️ **Cloud:** AWS, Azure, GCP
+- ✅ **Data Quality:** Great Expectations, dbt tests, custom validations
+- 🤖 **ML & Analytics:** Scikit-learn, TensorFlow, PyTorch, Advanced SQL
+
+---
+
+## 📖 ESTRUTURA DE 10 CATEGORIAS
+
+### **PARTE 1: EXTRAÇÃO DE DADOS**
+📄 `01_EXTRACAO_DE_DADOS.md`
+- 1.1 Web Scraping (BeautifulSoup, Scrapy, Selenium)
+- 1.2 APIs (REST, GraphQL, OAuth)
+- 1.3 Databases (SQL, NoSQL, Data Dumps)
+- 1.4 Files (CSV, JSON, Parquet, Excel)
+- 1.5 Cloud Storage (S3, GCS, Azure Blob)
+- 1.6 Web Crawling (distribuído, com retry logic)
+- 1.7 Data Connectors (prontos)
+
+### **PARTE 2: ETL/ELT PIPELINES**
+📄 `02_ETL_ELT_PIPELINES.md`
+- 2.1 Apache Airflow (DAGs, Operators, Scheduling)
+- 2.2 dbt (Transformações, Tests, Documentation)
+- 2.3 Luigi (Task pipelines)
+- 2.4 Talend (Visual ETL)
+- 2.5 Fivetran (Cloud integration)
+- 2.6 Custom Python ETL
+- 2.7 Incremental & CDC (Change Data Capture)
+- 2.8 Error Handling & Monitoring
+
+### **PARTE 3: DATA WAREHOUSING**
+📄 `03_DATA_WAREHOUSING.md`
+- 3.1 Snowflake (Schemas, Performance, Sharing)
+- 3.2 Google BigQuery (Tables, Views, ML)
+- 3.3 AWS Redshift (Clusters, Spectrum)
+- 3.4 Databricks (Delta Lake, SQL, ML)
+- 3.5 Azure Synapse (Dedicated SQL, Spark)
+- 3.6 Schema Design (Star, Snowflake, 3NF)
+- 3.7 Partitioning & Indexing
+- 3.8 Performance Optimization
+
+### **PARTE 4: DATA LAKES**
+📄 `04_DATA_LAKES.md`
+- 4.1 AWS S3 + Glue (Cataloging, Crawlers)
+- 4.2 Azure Data Lake (Storage, Hierarchy)
+- 4.3 GCP Cloud Storage + BigLake
+- 4.4 Apache Iceberg (Table format)
+- 4.5 Delta Lake (ACID transactions)
+- 4.6 Parquet & ORC (File formats)
+- 4.7 Data Governance in Lakes
+- 4.8 Lakehouse Architecture
+
+### **PARTE 5: BI & VISUALIZAÇÃO**
+📄 `05_BI_VISUALIZACAO.md`
+- 5.1 Power BI (Dashboards, DAX, Refresh)
+- 5.2 Looker (Blocks, LookML, Explores)
+- 5.3 Tableau (Workbooks, Dimensions, Measures)
+- 5.4 Metabase (Open-source, Self-service)
+- 5.5 Apache Superset (Modern dashboarding)
+- 5.6 Google Data Studio
+- 5.7 Custom Dashboards (React, D3.js)
+- 5.8 Performance & Caching
+
+### **PARTE 6: REAL-TIME & STREAMING**
+📄 `06_REAL_TIME_STREAMING.md`
+- 6.1 Apache Kafka (Topics, Partitions, Consumers)
+- 6.2 Apache Flink (Streaming, Windows)
+- 6.3 Spark Structured Streaming
+- 6.4 Cloud Streaming (Kinesis, Pub/Sub)
+- 6.5 Message Queues (RabbitMQ, Redis)
+- 6.6 Real-time Aggregations
+- 6.7 Stream Processing Patterns
+- 6.8 Monitoring Streaming Pipelines
+
+### **PARTE 7: PYTHON & SQL PARA DATA**
+📄 `07_PYTHON_SQL_DATA.md`
+- 7.1 Pandas (DataFrames, Transformations)
+- 7.2 PySpark (Distributed computing)
+- 7.3 SQL Avançado (Window functions, CTEs)
+- 7.4 Polars (High-performance processing)
+- 7.5 DuckDB (In-process OLAP)
+- 7.6 Data Manipulation Patterns
+- 7.7 Performance Optimization
+- 7.8 Testing Data Pipelines
+
+### **PARTE 8: CLOUD DATA PLATFORMS**
+📄 `08_CLOUD_DATA_PLATFORMS.md`
+- 8.1 AWS (S3, RDS, Redshift, Glue, Lambda)
+- 8.2 Azure (Data Lake, Synapse, SQL DB)
+- 8.3 GCP (BigQuery, Cloud Storage, Dataflow)
+- 8.4 Cross-cloud strategies
+- 8.5 Cost optimization
+- 8.6 Security & Governance
+- 8.7 Networking & Connectivity
+- 8.8 Multi-region & Disaster Recovery
+
+### **PARTE 9: DATA QUALITY & GOVERNANCE**
+📄 `09_DATA_QUALITY_GOVERNANCE.md`
+- 9.1 Great Expectations (Testing, Validation)
+- 9.2 dbt tests & assertions
+- 9.3 Custom validation frameworks
+- 9.4 Data Lineage & Metadata
+- 9.5 Data Cataloging (Collibra, Alation)
+- 9.6 Privacy & GDPR compliance
+- 9.7 Master Data Management
+- 9.8 Monitoring & Alerting
+
+### **PARTE 10: ML & ADVANCED ANALYTICS**
+📄 `10_ML_ADVANCED_ANALYTICS.md`
+- 10.1 Feature Engineering
+- 10.2 Model Training (Scikit-learn, XGBoost)
+- 10.3 Deep Learning (TensorFlow, PyTorch)
+- 10.4 MLOps (Model deployment, monitoring)
+- 10.5 SQL para Analytics (Advanced queries)
+- 10.6 Time Series Analysis
+- 10.7 Recommender Systems
+- 10.8 Causal Analysis & Experimentation
+
+---
+
+## 🗂️ ESTRUTURA DE PASTAS RECOMENDADA
+
+```
+data-analytics-encyclopedia/
+├── docs/
+│   ├── 00_INDICE_GERAL.md
+│   ├── 01_EXTRACAO_DE_DADOS.md
+│   ├── 02_ETL_ELT_PIPELINES.md
+│   ├── 03_DATA_WAREHOUSING.md
+│   ├── 04_DATA_LAKES.md
+│   ├── 05_BI_VISUALIZACAO.md
+│   ├── 06_REAL_TIME_STREAMING.md
+│   ├── 07_PYTHON_SQL_DATA.md
+│   ├── 08_CLOUD_DATA_PLATFORMS.md
+│   ├── 09_DATA_QUALITY_GOVERNANCE.md
+│   └── 10_ML_ADVANCED_ANALYTICS.md
+│
+├── scrapers/
+│   ├── beautifulsoup/
+│   ├── selenium/
+│   ├── scrapy/
+│   └── api-clients/
+│
+├── etl/
+│   ├── airflow/
+│   │   ├── dags/
+│   │   └── plugins/
+│   ├── dbt/
+│   │   ├── models/
+│   │   ├── tests/
+│   │   └── macros/
+│   ├── python/
+│   └── spark/
+│
+├── data-warehouse/
+│   ├── snowflake/
+│   ├── bigquery/
+│   ├── redshift/
+│   └── sql/
+│
+├── bi-dashboards/
+│   ├── power-bi/
+│   ├── looker/
+│   ├── tableau/
+│   └── metabase/
+│
+├── streaming/
+│   ├── kafka/
+│   ├── spark-streaming/
+│   └── flink/
+│
+├── scripts/
+│   ├── python/
+│   └── sql/
+│
+├── notebooks/
+│   ├── eda/
+│   ├── ml/
+│   └── analysis/
+│
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── data-quality/
+│
+├── docker/
+│   ├── Dockerfile
+│   └── docker-compose.yml
+│
+└── README.md
+```
+
+---
+
+## 📋 CHECKLIST DE COBERTURA
+
+### Categoria 1: Extração de Dados
+- [ ] BeautifulSoup web scraping
+- [ ] Selenium (interactive pages)
+- [ ] Scrapy framework
+- [ ] REST APIs (authentication, pagination)
+- [ ] GraphQL queries
+- [ ] Database connections
+- [ ] CSV/JSON parsing
+- [ ] Cloud storage (S3, GCS, Blob)
+
+### Categoria 2: ETL/ELT
+- [ ] Airflow DAGs (scheduling, dependencies)
+- [ ] dbt transformations (models, tests)
+- [ ] Python ETL (pandas, polars)
+- [ ] Incremental loading (CDC)
+- [ ] Error handling & retries
+- [ ] Monitoring & alerting
+- [ ] Data validation
+- [ ] Scheduling strategies
+
+### Categoria 3: Data Warehousing
+- [ ] Snowflake setup & optimization
+- [ ] BigQuery tables & views
+- [ ] Redshift clusters
+- [ ] Databricks Delta Lake
+- [ ] Star schema design
+- [ ] Partitioning strategies
+- [ ] Query optimization
+- [ ] Cost management
+
+### Categoria 4: Data Lakes
+- [ ] AWS S3 + Glue
+- [ ] Azure Data Lake
+- [ ] GCP Cloud Storage
+- [ ] Apache Iceberg
+- [ ] Delta Lake
+- [ ] Parquet format
+- [ ] Data governance
+- [ ] Lakehouse architecture
+
+### Categoria 5: BI & Visualização
+- [ ] Power BI (DAX, relationships)
+- [ ] Looker (LookML, explores)
+- [ ] Tableau (calculations, filters)
+- [ ] Metabase (self-service)
+- [ ] Dashboard best practices
+- [ ] Performance optimization
+- [ ] Mobile-friendly dashboards
+
+### Categoria 6: Real-time & Streaming
+- [ ] Kafka setup & configuration
+- [ ] Apache Flink jobs
+- [ ] Spark Streaming
+- [ ] Real-time aggregations
+- [ ] Stream-to-stream joins
+- [ ] Windowed processing
+- [ ] Event-driven pipelines
+
+### Categoria 7: Python & SQL
+- [ ] Pandas operations
+- [ ] PySpark transformations
+- [ ] SQL window functions
+- [ ] CTEs & subqueries
+- [ ] Performance tuning
+- [ ] Testing frameworks
+- [ ] Data profiling
+
+### Categoria 8: Cloud Platforms
+- [ ] AWS (S3, RDS, Glue, Lambda)
+- [ ] Azure (Data Lake, Synapse)
+- [ ] GCP (BigQuery, Dataflow)
+- [ ] Cross-cloud patterns
+- [ ] Cost optimization
+- [ ] Security best practices
+
+### Categoria 9: Data Quality & Governance
+- [ ] Great Expectations framework
+- [ ] dbt tests & assertions
+- [ ] Data lineage tracking
+- [ ] Metadata management
+- [ ] Privacy compliance
+- [ ] Data cataloging
+- [ ] Monitoring frameworks
+
+### Categoria 10: ML & Analytics
+- [ ] Feature engineering
+- [ ] Model training
+- [ ] ML pipelines
+- [ ] Advanced SQL analytics
+- [ ] Time series analysis
+- [ ] Experimentation setup
 
 ---
 
 ## 🚀 COMEÇAR EM 5 MINUTOS
 
-### **Caso 1: Scrape um Website**
+### **Opção 1: Scrape um Site**
 
 ```python
 from bs4 import BeautifulSoup
 import requests
-import pandas as pd
 
-# Fetch
-response = requests.get('https://example.com/products')
+response = requests.get('https://example.com')
 soup = BeautifulSoup(response.content, 'html.parser')
-
-# Parse
-data = []
-for item in soup.find_all('div', class_='product'):
-    data.append({
-        'name': item.find('h2').text,
-        'price': item.find('span', class_='price').text,
-    })
-
-# Save
-df = pd.DataFrame(data)
-df.to_csv('products.csv', index=False)
-print(f"✓ Scraped {len(df)} products")
+data = soup.find_all('div', class_='item')
+print(data)
 ```
 
-### **Caso 2: Extrair de API**
-
-```python
-import requests
-import pandas as pd
-
-# Query API
-response = requests.get(
-    'https://api.example.com/users',
-    headers={'Authorization': 'Bearer TOKEN'},
-    params={'page': 1, 'limit': 100}
-)
-
-users = response.json()['data']
-
-# Save
-df = pd.DataFrame(users)
-df.to_parquet('users.parquet')
-```
-
-### **Caso 3: Load Database para CSV**
+### **Opção 2: Load Data com Pandas**
 
 ```python
 import pandas as pd
-from sqlalchemy import create_engine
 
-# Connect
-engine = create_engine('postgresql://user:pass@localhost/mydb')
-
-# Load
-df = pd.read_sql('SELECT * FROM users LIMIT 1000', engine)
-
-# Save
-df.to_csv('users.csv', index=False)
+df = pd.read_csv('data.csv')
+df['new_col'] = df['col1'] + df['col2']
+df.to_parquet('output.parquet')
 ```
 
-### **Caso 4: BigQuery Load**
+### **Opção 3: Query BigQuery**
 
 ```python
 from google.cloud import bigquery
-import pandas as pd
 
-client = bigquery.Client(project='my-project')
-
-# Query
+client = bigquery.Client()
 query = """
-  SELECT user_id, COUNT(*) as events
-  FROM `project.dataset.events`
-  WHERE date BETWEEN '2024-01-01' AND '2024-01-31'
-  GROUP BY user_id
+  SELECT name, COUNT(*) as count
+  FROM `project.dataset.table`
+  GROUP BY name
 """
-
 df = client.query(query).to_dataframe()
-df.to_csv('user_events.csv', index=False)
 ```
 
-### **Caso 5: Airflow ETL Pipeline**
+### **Opção 4: Airflow DAG**
 
 ```python
 from airflow import DAG
@@ -126,123 +350,66 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime
 
 def extract():
-    import requests
-    data = requests.get('https://api.example.com/data').json()
-    return data
-
-def transform(ti):
-    data = ti.xcom_pull(task_ids='extract')
-    # Process data
-    return processed_data
-
-def load(ti):
-    data = ti.xcom_pull(task_ids='transform')
-    # Load to warehouse
+    # Scrape data
     pass
 
 dag = DAG('daily_etl', start_date=datetime(2024, 1, 1), schedule_interval='@daily')
-
-t1 = PythonOperator(task_id='extract', python_callable=extract, dag=dag)
-t2 = PythonOperator(task_id='transform', python_callable=transform, dag=dag)
-t3 = PythonOperator(task_id='load', python_callable=load, dag=dag)
-
-t1 >> t2 >> t3
+extract_task = PythonOperator(task_id='extract', python_callable=extract, dag=dag)
 ```
 
 ---
 
-## 📋 QUAL USAR QUANDO?
+## 🎓 COMO USAR ESTA ENCICLOPÉDIA
 
-| Situação | Ferramenta |
-|----------|-----------|
-| Scrape website | BeautifulSoup |
-| Site com JavaScript | Selenium |
-| Scale crawling | Scrapy |
-| API REST | requests |
-| GraphQL | graphql-core |
-| SQL Database | SQLAlchemy/pandas |
-| MongoDB | pymongo |
-| S3 data | boto3 |
-| GCS data | google-cloud-storage |
-| Schedule jobs | Airflow |
-| Transformações SQL | dbt |
-| Real-time data | Kafka |
-| Data warehouse | BigQuery/Snowflake |
-| BI dashboards | Looker/Power BI |
-| Data quality | Great Expectations |
-| ML features | Feature engineering |
+### **Cenário 1: Você precisa fazer Web Scraping**
+→ Leia **Categoria 1: Extração de Dados**
+- BeautifulSoup para sites estáticos
+- Selenium para sites dinâmicos
+- Scrapy para scraping em escala
+
+### **Cenário 2: Você precisa fazer ETL**
+→ Leia **Categoria 2: ETL/ELT Pipelines**
+- Airflow para orchestration
+- dbt para transformações SQL
+- Python para lógica complexa
+
+### **Cenário 3: Você precisa de um Data Warehouse**
+→ Leia **Categoria 3: Data Warehousing**
+- Snowflake ou BigQuery (recomendado)
+- Schema design patterns
+- Optimization techniques
+
+### **Cenário 4: Você precisa de Dashboards**
+→ Leia **Categoria 5: BI & Visualização**
+- Power BI para empresas Windows
+- Looker para startups/web
+- Tableau para complexo
+
+### **Cenário 5: Você precisa de Real-time**
+→ Leia **Categoria 6: Real-time & Streaming**
+- Kafka para ingestão
+- Spark Streaming ou Flink para processing
+
+### **Cenário 6: Você precisa de ML**
+→ Leia **Categoria 10: ML & Advanced Analytics**
+- Feature engineering patterns
+- Model training pipelines
+- Production deployment
 
 ---
 
-## 🎯 CASOS DE USO REAIS
+## 🏆 EXEMPLOS INCLUSOS
 
-### **Case 1: E-commerce Analytics**
-```
-1. Scrape: Competitor prices (BeautifulSoup)
-   └─ Todos os dias via cron
+Cada categoria tem **+10 exemplos funcionais**:
 
-2. Extract: Order data (SQL)
-   └─ Incremental loading (Airflow)
-
-3. Transform: dbt
-   └─ Clean, denormalize, aggregate
-
-4. Warehouse: Snowflake
-   └─ Star schema (Orders, Products, Customers)
-
-5. BI: Looker
-   └─ Dashboards (Sales, Margins, Competitors)
-
-6. Quality: Great Expectations
-   └─ Alert se sales < 1000 ou duplicates
-```
-
-### **Case 2: SaaS Product Analytics**
-```
-1. Collect: Events (Segment/custom)
-   └─ To Kafka
-
-2. Stream: Real-time aggregations
-   └─ Spark Streaming
-
-3. Warehouse: BigQuery
-   └─ Raw events, aggregated metrics
-
-4. BI: Power BI
-   └─ Dashboards (Retention, Funnel, ARPU)
-
-5. ML: Churn prediction
-   └─ XGBoost trained weekly
-```
-
-### **Case 3: Financial Data Pipeline**
-```
-1. Ingest: APIs (Alpha Vantage, Yahoo Finance)
-   └─ Python + cron
-
-2. Transform: Airflow
-   └─ Clean, calculate ratios
-
-3. Warehouse: Redshift
-   └─ Historical stock data, fundamentals
-
-4. Real-time: Kafka
-   └─ Price updates to traders
-
-5. BI: Tableau
-   └─ Technical analysis dashboards
-```
-
-### **Case 4: Data Lake (Multi-source)**
-```
-1. Sources: 20+ APIs, databases, files
-2. Ingestion: Fivetran + custom connectors
-3. Storage: S3 + Parquet + Iceberg
-4. Catalog: AWS Glue
-5. Processing: Spark + dbt
-6. Governance: Delta Lake + Collibra
-7. Analytics: Athena + Looker
-```
+- ✅ **Código completo** (não pseudocódigo)
+- ✅ **Pronto para copiar & usar**
+- ✅ **Explainação linha a linha**
+- ✅ **Pré-requisitos claros**
+- ✅ **Pegadinhas comuns**
+- ✅ **Variações por caso de uso**
+- ✅ **Performance tips**
+- ✅ **Troubleshooting**
 
 ---
 
@@ -250,263 +417,138 @@ t1 >> t2 >> t3
 
 ### **Para Startups/MVP:**
 ```
-Extraction:   Python + BeautifulSoup
-ETL:          Airflow (ou dbt)
-Warehouse:    BigQuery (ou Snowflake)
-BI:           Metabase ou Looker
-Quality:      dbt tests
-Cost/Month:   ~$500-2000
-```
-
-### **Para Scale-up:**
-```
-Extraction:   Python + Kafka
-ETL:          Airflow + dbt + Spark
-Warehouse:    Snowflake
-BI:           Looker + Power BI
-Quality:      Great Expectations
-Governance:   Collibra Lite
-Cost/Month:   ~$5000-15000
+Extração: Python + BeautifulSoup
+ETL: Airflow (ou dbt)
+DW: BigQuery (ou Snowflake)
+BI: Metabase ou Looker
 ```
 
 ### **Para Enterprise:**
 ```
-Extraction:   Custom connectors
-ETL:          Airflow + dbt + Spark
-Warehouse:    Snowflake + Delta Lake
-BI:           Power BI + Looker + Tableau
-Quality:      Great Expectations + custom
-Governance:   Collibra + Alation
-ML:           MLflow + feature store
-Cost/Month:   ~$20000+
+Extração: Custom connectors
+ETL: Airflow + dbt + Spark
+DW: Snowflake + Delta Lake
+BI: Power BI + Looker
+Governance: Collibra + Great Expectations
 ```
 
 ### **Para Real-time:**
 ```
-Ingestion:    Kafka + Kinesis
-Processing:   Spark Streaming + Flink
-Storage:      Kafka + Data Lake
-Analytics:    Druid + ClickHouse
-BI:           Superset + Metabase
-Cost/Month:   ~$10000+
+Ingestão: Kafka
+Processing: Spark Streaming + Flink
+Storage: Kafka + Data Lake
+Analytics: Druid + ClickHouse
 ```
 
 ---
 
-## 🏃 QUICK START TEMPLATES
+## 💡 STACK POR EMPRESA
 
-### **Template 1: Simple ETL (Airflow + Snowflake)**
+### **Alibaba/TikTok (Scale)**
+- Extração: Custom + Spark
+- ETL: Custom Java + Scala
+- DW: Druid + ClickHouse
+- Streaming: Kafka + Flink
 
-```python
-# File: dags/simple_etl.py
+### **Stripe/Lyft (Startups Scale)**
+- Extração: Python + Kafka
+- ETL: Airflow + dbt + Spark
+- DW: Snowflake
+- BI: Looker
+- ML: MLflow
 
-from airflow import DAG
-from airflow.operators.python import PythonOperator
-from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
-from datetime import datetime
-import pandas as pd
-import requests
+### **Google (Cloud-native)**
+- Extração: Cloud Functions
+- ETL: Dataflow + dbt
+- DW: BigQuery
+- BI: Data Studio + Looker
+- Streaming: Pub/Sub + Dataflow
 
-def extract_data():
-    response = requests.get('https://api.example.com/data')
-    df = pd.DataFrame(response.json())
-    df.to_csv('/tmp/raw_data.csv', index=False)
-    return '/tmp/raw_data.csv'
+### **Spotify (Real-time)**
+- Extração: Kafka + APIs
+- ETL: Spark + Luigi
+- DW: Cassandra + Elasticsearch
+- Streaming: Kafka + Flink
+- ML: Luigi + Tensorflow
 
-def load_to_snowflake():
-    df = pd.read_csv('/tmp/raw_data.csv')
-    # Connect to Snowflake
-    from sqlalchemy import create_engine
-    engine = create_engine(
-        'snowflake://user:password@account/database/schema'
-    )
-    df.to_sql('raw_table', engine, if_exists='append', index=False)
+---
 
-dag = DAG(
-    'simple_etl',
-    start_date=datetime(2024, 1, 1),
-    schedule_interval='@daily',
-    catchup=False
-)
+## 📈 CURVA DE APRENDIZADO
 
-extract = PythonOperator(
-    task_id='extract',
-    python_callable=extract_data,
-    dag=dag
-)
-
-transform = SnowflakeOperator(
-    task_id='transform',
-    sql="""
-        INSERT INTO production.events
-        SELECT * FROM raw.raw_table
-        WHERE processed_at > CURRENT_TIMESTAMP - INTERVAL '1 day'
-    """,
-    snowflake_conn_id='snowflake_default',
-    dag=dag
-)
-
-extract >> transform
 ```
-
-### **Template 2: Web Scraping Pipeline**
-
-```python
-# File: scrapers/ecommerce.py
-
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-import logging
-from datetime import datetime
-
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
-class EcommerceScraper:
-    def __init__(self, base_url):
-        self.base_url = base_url
-        self.data = []
-    
-    def scrape(self, num_pages=5):
-        for page in range(1, num_pages + 1):
-            url = f"{self.base_url}?page={page}"
-            logger.info(f"Scraping {url}")
-            
-            response = requests.get(url)
-            soup = BeautifulSoup(response.content, 'html.parser')
-            
-            for product in soup.find_all('div', class_='product'):
-                self.data.append({
-                    'name': product.find('h2').text.strip(),
-                    'price': float(product.find('span', class_='price').text.replace('$', '')),
-                    'rating': float(product.find('span', class_='rating').text),
-                    'url': product.find('a')['href'],
-                    'scraped_at': datetime.now().isoformat()
-                })
-        
-        return pd.DataFrame(self.data)
-    
-    def save(self, filename='products.parquet'):
-        df = pd.DataFrame(self.data)
-        df.to_parquet(filename, index=False)
-        logger.info(f"✓ Saved {len(df)} products to {filename}")
-        return df
-
-if __name__ == "__main__":
-    scraper = EcommerceScraper('https://example.com/products')
-    df = scraper.scrape(num_pages=10)
-    scraper.save('products.parquet')
-    print(df.head())
-```
-
-### **Template 3: dbt Data Transformation**
-
-```sql
--- File: models/staging/stg_users.sql
-
-{{ config(materialized='table') }}
-
-SELECT
-    id,
-    email,
-    created_at,
-    LOWER(TRIM(email)) as email_normalized,
-    CAST(created_at AS DATE) as signup_date,
-    ROW_NUMBER() OVER (PARTITION BY email ORDER BY created_at) as email_occurrence
-FROM {{ source('raw', 'users') }}
-WHERE created_at > '2024-01-01'
-
--- File: models/staging/schema.yml
-
-version: 2
-
-models:
-  - name: stg_users
-    description: "Staged user data"
-    columns:
-      - name: id
-        description: "Primary key"
-        tests:
-          - unique
-          - not_null
-      - name: email
-        tests:
-          - not_null
-          - unique
+Dia 1:    BeautifulSoup scraping
+Dia 2-3:  Pandas transformations
+Dia 4-5:  Airflow DAGs basics
+Dia 6-7:  dbt models & tests
+Semana 2: BigQuery/Snowflake setup
+Semana 3: BI tool (Power BI/Looker)
+Semana 4: Streaming basics (Kafka)
+Semana 5: Advanced SQL & optimization
+Mês 2:    ML & advanced patterns
 ```
 
 ---
 
-## 🛠️ FERRAMENTAS ESSENCIAIS
+## 🎯 CASES REAIS
 
-```bash
-# Install common tools
-pip install pandas polars pyspark
-pip install requests beautifulsoup4 selenium scrapy
-pip install sqlalchemy pymongo
-pip install apache-airflow dbt
-pip install great-expectations
-pip install google-cloud-bigquery
-pip install boto3
-pip install azure-storage-blob
+### **Case 1: E-commerce Analytics**
+```
+Scrape: Competitor prices (BeautifulSoup)
+ETL: Load to Snowflake (Airflow + dbt)
+DW: Star schema (Orders, Products, Customers)
+BI: Looker dashboards (Sales, Customer LTV)
+Alerts: Price changes > 10% (Great Expectations)
+```
 
-# Data exploration
-pip install jupyter notebook
-pip install pandas-profiling
-pip install plotly matplotlib seaborn
+### **Case 2: SaaS Product Analytics**
+```
+Collect: Events to Kafka (Segment/Amplitude)
+Stream: Real-time aggregations (Spark Streaming)
+DW: BigQuery (user events, metrics)
+BI: Looker (retention, funnel, engagement)
+ML: Churn prediction (XGBoost)
+```
+
+### **Case 3: Finance Data Pipeline**
+```
+Ingest: APIs (Alpha Vantage, Yahoo Finance)
+ETL: Airflow + Python + SQL
+DW: Redshift (stock data, fundamentals)
+BI: Power BI (dashboards for traders)
+Real-time: Kafka → Druid (price updates)
+ML: Time series forecasting
+```
+
+### **Case 4: Data Lake (Multi-source)**
+```
+Sources: 20+ APIs + databases + files
+Ingestion: Fivetran + custom Python
+Storage: S3 + Iceberg + Parquet
+Processing: Spark + dbt
+Catalog: Glue + Collibra
+Governance: Delta Lake + Great Expectations
+BI: Athena + Looker
 ```
 
 ---
 
-## 📚 DOCUMENTAÇÃO COMPLETA
+## 🔗 PRÓXIMAS PÁGINAS
 
-As 10 categorias com **150+ exemplos**:
+→ **01_EXTRACAO_DE_DADOS.md**
+- Web Scraping (15 exemplos)
+- APIs (10 exemplos)
+- Database connections (8 exemplos)
 
-1. **Extração** (BeautifulSoup, Selenium, APIs)
-2. **ETL/ELT** (Airflow, dbt, Python)
-3. **Data Warehousing** (Snowflake, BigQuery, Redshift)
-4. **Data Lakes** (S3, Delta Lake, Iceberg)
-5. **BI & Visualização** (Power BI, Looker, Tableau)
-6. **Real-time** (Kafka, Spark Streaming)
-7. **Python & SQL** (Pandas, PySpark, Advanced SQL)
-8. **Cloud Platforms** (AWS, Azure, GCP)
-9. **Data Quality** (Great Expectations, dbt tests)
-10. **ML & Analytics** (Feature engineering, Models)
+→ **02_ETL_ELT_PIPELINES.md**
+- Airflow (20 exemplos)
+- dbt (15 exemplos)
+- Python ETL (12 exemplos)
 
----
-
-## 🎯 PRÓXIMOS PASSOS
-
-1. **Leia:** DATA_ANALYTICS_INDICE.md (visão geral)
-2. **Escolha caso:** "Qual é meu objetivo?"
-3. **Copie template:** Do DATA_01_EXTRACAO_DADOS.md
-4. **Customize:** Para seu ambiente
-5. **Execute:** Com confiança
+→ ... E mais 8 categorias!
 
 ---
 
-## 💡 DICAS
+**Status:** 📝 Pronto para começar
+**Última atualização:** 2026-06-19
 
-✅ **DO:**
-- Comece com um dataset pequeno
-- Version control no Git
-- Test data pipelines
-- Monitor qualidade
-- Document transformations
-- Automated tests (dbt)
-
-❌ **DON'T:**
-- Sem validação de dados
-- Sem backup/recovery
-- Manual transformations
-- Sem monitoring
-- Hardcode credentials
-- Without documentation
-
----
-
-## 📞 PRÓXIMA AÇÃO
-
-Abra **DATA_01_EXTRACAO_DADOS.md** para começar com exemplos práticos!
-
+Abra os docs para começar! ⬇️
