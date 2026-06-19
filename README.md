@@ -1,8 +1,8 @@
 # 📊 ENCICLOPÉDIA DATA ENGINEERING & ANALYTICS UNIVERSAL
 
 **Versão:** 1.0 | **Data:** 2026 | **Público:** Data Engineers, Data Scientists, Analytics Engineers
-
 **Autor:** José G.
+
 ---
 
 ## 🎯 OBJETIVO
